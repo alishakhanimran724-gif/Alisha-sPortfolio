@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alisha Khan — Full-Stack Developer</title>
 <meta name="description" content="Alisha Khan — Full-Stack Developer crafting production-ready web apps with MERN, PHP, MySQL & Next.js.">
-<link rel="canonical" href="https://alishakhanimran724-gif.github.io/portfolio/">
+<link rel="canonical" href="https://alisha-s-portfolio-pxwh.vercel.app/">
 
 <!-- Favicons -->
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -19,16 +19,16 @@
 <meta property="og:site_name" content="Alisha Khan — Portfolio">
 <meta property="og:title" content="Alisha Khan — Full-Stack Developer">
 <meta property="og:description" content="Web products that feel as good as they work. Full-stack developer crafting production-ready apps end to end — MERN · PHP · Next.js.">
-<meta property="og:image" content="https://alishakhanimran724-gif.github.io/portfolio/og-image.png">
+<meta property="og:image" content="https://alisha-s-portfolio-pxwh.vercel.app/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://alishakhanimran724-gif.github.io/portfolio/">
+<meta property="og:url" content="https://alisha-s-portfolio-pxwh.vercel.app/">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Alisha Khan — Full-Stack Developer">
 <meta name="twitter:description" content="Web products that feel as good as they work. Full-stack developer crafting production-ready apps end to end — MERN · PHP · Next.js.">
-<meta name="twitter:image" content="https://alishakhanimran724-gif.github.io/portfolio/og-image.png">
+<meta name="twitter:image" content="https://alisha-s-portfolio-pxwh.vercel.app/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -297,6 +297,7 @@ section.block{padding:120px 0;position:relative;z-index:2}
 .tm-form input::placeholder,.tm-form textarea::placeholder{color:var(--cream-dd)}
 @media(max-width:480px){.tm-form-row{grid-template-columns:1fr}}
 .tm-honeypot{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .tm-empty{grid-column:1/-1;text-align:center;padding:36px 0;color:var(--cream-dd);font-size:14px;border:1px dashed var(--line);border-radius:var(--r)}
 .tm-status{font-size:13px;min-height:18px}
 .tm-status.ok{color:#22c55e}
@@ -757,9 +758,10 @@ footer{border-top:1px solid rgba(255,255,255,.08);padding:36px 0;position:relati
       <h2 class="s-title">How I got <em>here</em>.</h2>
     </div>
     <div class="tl">
-      <div class="tl-item reveal d1"><div class="tl-yr">2024 — Present</div><div class="tl-role">Freelance Full-Stack Developer</div><div class="tl-place">Remote</div><p class="tl-desc">Delivered 6+ full-scale platforms including eCommerce stores, management dashboards and a legal AI product. Built multi-role authentication, REST APIs, admin panels and live deployments — managing client communication, scoping and timelines independently.</p></div>
-      <div class="tl-item reveal d2"><div class="tl-yr">2023</div><div class="tl-role">Junior Web Developer — Intern</div><div class="tl-place">Pakistan</div><p class="tl-desc">Built internal admin dashboards with PHP &amp; MySQL inside an agile team, integrated REST APIs and developed responsive frontend interfaces.</p></div>
-      <div class="tl-item reveal d3"><div class="tl-yr">2021 — 2025</div><div class="tl-role">BS Computer Science</div><div class="tl-place">University, Pakistan</div><p class="tl-desc">Computer Science degree alongside hands-on building. Certified in PHP &amp; MySQL Development (Udemy) and JavaScript A–Z (freeCodeCamp).</p></div>
+      <div class="tl-item reveal d1"><div class="tl-yr">June 2025 — Present</div><div class="tl-role">Full Stack Web Developer</div><div class="tl-place">Clea Dental SMC Pvt Limited</div><p class="tl-desc">Own both ends of the application — building user-facing pages and the backend logic behind them. Set up REST APIs, integrated outside services, and manage login systems, permission levels and both SQL and NoSQL databases. Track down bugs, review teammates' code, ship updates to live servers, and work directly with management to turn business needs into features.</p></div>
+      <div class="tl-item reveal d2"><div class="tl-yr">2024 — Present</div><div class="tl-role">Freelance Full-Stack Developer</div><div class="tl-place">Remote</div><p class="tl-desc">Delivered 6+ full-scale platforms including eCommerce stores, management dashboards and a legal AI product. Built multi-role authentication, REST APIs, admin panels and live deployments — managing client communication, scoping and timelines independently.</p></div>
+      <div class="tl-item reveal d3"><div class="tl-yr">2024</div><div class="tl-role">Web Developer — Intern</div><div class="tl-place">Gexton Education</div><p class="tl-desc">Worked on full-stack web development projects — building and shipping features across both the frontend and backend.</p></div>
+      <div class="tl-item reveal d1"><div class="tl-yr">2023</div><div class="tl-role">Junior Web Developer — Intern</div><div class="tl-place">Pakistan</div><p class="tl-desc">Built internal admin dashboards with PHP &amp; MySQL inside an agile team, integrated REST APIs and developed responsive frontend interfaces.</p></div>
     </div>
   </div>
 </section>
@@ -790,9 +792,12 @@ footer{border-top:1px solid rgba(255,255,255,.08);padding:36px 0;position:relati
         </div>
         <form class="tm-form" id="reviewForm">
           <div class="tm-form-row">
+            <label class="sr-only" for="rvName">Your name</label>
             <input type="text" id="rvName" placeholder="Your name" required maxlength="59">
+            <label class="sr-only" for="rvRole">Role and company</label>
             <input type="text" id="rvRole" placeholder="Role & company (optional)" maxlength="79">
           </div>
+          <label class="sr-only" for="rvMsg">Your review</label>
           <textarea id="rvMsg" placeholder="What was it like working together?" rows="3" required maxlength="499"></textarea>
           <input type="text" id="rvWebsite" name="website" class="tm-honeypot" tabindex="-1" autocomplete="off">
           <button type="submit" class="btn-sec" style="align-self:flex-start">Post review <span class="arr">→</span></button>
@@ -977,7 +982,12 @@ function videoReady(){ hv.classList.add('ready'); }
 hv.addEventListener('loadeddata', videoReady);
 hv.addEventListener('canplay', videoReady);
 if(hv.readyState >= 2) videoReady();
-hv.play?.().catch(()=>{});
+if(REDUCE){
+  hv.pause();
+  hv.removeAttribute('autoplay');
+} else {
+  hv.play?.().catch(()=>{});
+}
 
 /* nav */
 const nav = document.getElementById('nav');
